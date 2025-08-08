@@ -151,14 +151,21 @@ h1 {
   background-color: #595959;
 }
 
-  img.thumbnail {
-      width: 120px;
-      height: auto;
-    }
-    table {
-      border-collapse: collapse;
-    }
-    td {
-      padding: 10px;
-      text-align: center;
-/* REMEMBER TO LINK THE STYLESHEET TO EACH PAGE PLEASE FOR THE LOVE OF GOD */
+ img.thumbnail {
+   width: 120px;
+   height: auto;
+}
+
+ table {
+   border-collapse: collapse;
+}
+  td {
+   padding: 10px;
+   text-align: center;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
