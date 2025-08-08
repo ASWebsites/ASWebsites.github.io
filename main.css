@@ -1,1 +1,20 @@
+html {
+  font-size: 16px;
+}
 
+@font-face {
+  font-family: 'Mozilla Text', sans-serif;
+  src: url('/fonts/MozillaText-VariableFont_wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: #0088DD;
+  font-family: 'Mozilla Text', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+/* REMEMBER TO LINK THE STYLESHEET TO EACH PAGE PLEASE FOR THE LOVE OF GOD */
