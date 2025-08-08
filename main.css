@@ -9,6 +9,104 @@ html {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'IBM Plex Serif Bold', sans-serif;
+  src: url('/fonts/IBMPlexSerif-Bold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Bold Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-BoldItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Extra Light', sans-serif;
+  src: url('/fonts/IBMPlexSerif-ExtraLight.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Extra Light Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-ExtraLightItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-Italic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Light', sans-serif;
+  src: url('/fonts/IBMPlexSerif-Light.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Light Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-LightItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Medium', sans-serif;
+  src: url('/fonts/BMPlexSerif-Medium.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Medium Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-MediumItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Regular', sans-serif;
+  src: url('/fonts/IBMPlexSerif-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Semi Bold', sans-serif;
+  src: url('/fonts/IBMPlexSerif-SemiBold.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Semi Bold Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-SemiBoldItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Thin', sans-serif;
+  src: url('/fonts/IBMPlexSerif-Thin.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif Thin Italic', sans-serif;
+  src: url('/fonts/IBMPlexSerif-ThinItalic.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: #0088DD;
   font-family: 'Mozilla Text', sans-serif;
@@ -17,4 +115,49 @@ body {
 img {
   max-width: 100%;
 }
+
+h1 {
+  font-family: 'IBM Plex Serif Regular';
+  font-size: 2.45rem;
+  font-weight: 500;
+}
+
+.btn-primary {
+  display: inline-block; 
+  background-color: #EE0000; 
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #B60000; 
+}
+
+.btn-secondary {
+  display: inline-block;
+  background-color: #A9A9A9; 
+  color: white;
+  padding: 10px 18px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn-secondary:hover {
+  background-color: #595959;
+}
+
+  img.thumbnail {
+      width: 120px;
+      height: auto;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+      text-align: center;
 /* REMEMBER TO LINK THE STYLESHEET TO EACH PAGE PLEASE FOR THE LOVE OF GOD */
