@@ -108,8 +108,9 @@ html {
 }
 
 body {
-  color: #0088DD;
+  background-color: #0088DD;
   font-family: 'Mozilla Text', sans-serif;
+  color: #FFFFFF;
 }
 
 img {
