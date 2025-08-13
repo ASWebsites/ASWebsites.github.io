@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
+  <url>
+    <loc>https://ASWebsites.github.io/index.html</loc>
+  </url>
+  <!-- About Us Page -->
+  <url>
+    <loc>https://ASWebsites.github.io/pages/about.html</loc>
+  </url>
+  <!-- Gallery Page -->
+  <url>
+    <loc>https://ASWebsites.github.io/pages/gallery.html</loc>
+  </url>
+  <!-- Contact Page -->
+  <url>
+    <loc>https://ASWebsites.github.io/pages/contact.html</loc>
+  </url>
+  <!-- Services Page-->
+   <url>
+    <loc>https://ASWebsites.github.io/pages/services.html</loc>
+  </url>
+</urlset>
+
