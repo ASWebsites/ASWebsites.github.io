@@ -1,4 +1,4 @@
-/* Reset & Base */
+/* Base Reset */
 *,
 *::before,
 *::after {
@@ -7,17 +7,16 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to bottom, #f4f4f4, #eaeaea);
-  color: #222;
+  background: linear-gradient(to bottom, #e4ecf7, #cfddee);
+  color: #1a1a1a;
   line-height: 1.6;
   font-size: 16px;
 }
 
-/* Layout */
-header,
-footer {
-  background-color: #fff;
-  border-bottom: 2px solid #ccc;
+/* Header & Navigation */
+header {
+  background: linear-gradient(to right, #dbe9f4, #b7cbe3);
+  border-bottom: 2px solid #a0b8d0;
   padding: 1rem 2rem;
 }
 nav {
@@ -27,19 +26,19 @@ nav {
 }
 nav a {
   text-decoration: none;
-  color: #222;
+  color: #1a1a1a;
   font-weight: 600;
   margin-left: 1rem;
 }
 nav a[aria-current="page"] {
-  color: #0078d7;
-  border-bottom: 2px solid #0078d7;
+  color: #0056a3;
+  border-bottom: 2px solid #0056a3;
 }
 
 /* Headings */
 h1, h2 {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: #111;
+  font-family: 'Segoe UI Semibold', 'Segoe UI', sans-serif;
+  color: #0f2c4d;
   margin-bottom: 0.5rem;
 }
 h1 {
@@ -47,6 +46,26 @@ h1 {
 }
 h2 {
   font-size: 1.5rem;
+}
+
+/* Buttons & Links */
+button,
+.cta {
+  background: linear-gradient(to bottom, #6aa9e9, #3c7dc9);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+button:hover,
+.cta:hover {
+  background: linear-gradient(to bottom, #5a97d6, #346bb3);
 }
 
 /* Forms */
@@ -62,22 +81,13 @@ label {
 input,
 textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #a0b8d0;
   border-radius: 4px;
   font-size: 1rem;
+  background-color: #f8fbff;
 }
-button {
-  background-color: #0078d7;
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-button:hover {
-  background-color: #005fa3;
+textarea {
+  resize: vertical;
 }
 
 /* Pricing Grid */
@@ -88,8 +98,8 @@ button:hover {
   margin-top: 2rem;
 }
 article {
-  background: white;
-  border: 1px solid #ddd;
+  background: linear-gradient(to bottom, #f4f8fc, #e2ecf5);
+  border: 1px solid #a0b8d0;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 4px 8px rgba(0,0,0,0.05);
@@ -101,23 +111,16 @@ article:hover {
 .price {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #0078d7;
-}
-.note {
-  margin-top: 2rem;
-  font-style: italic;
+  color: #0056a3;
 }
 
 /* Footer */
 footer {
-  border-top: 2px solid #ccc;
+  background: linear-gradient(to right, #dbe9f4, #b7cbe3);
+  border-top: 2px solid #a0b8d0;
   text-align: center;
   font-size: 0.875rem;
   padding: 1rem 2rem;
-}
-footer nav a {
-  margin: 0 0.5rem;
-  color: #555;
 }
 
 /* Responsive Typography */
