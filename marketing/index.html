@@ -1,50 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <head>
   <meta charset="UTF-8" />
-  <title>ASWebsites – Custom Web Design for Small Businesses</title>
-  <meta name="description" content="Welcome to ASWebsites, where small businesses get custom, user-friendly websites that drive results. Explore my services, portfolio, and how I can help your brand thrive online." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASWebsites – Custom Web Design for Small Businesses</title>
+  <meta name="description" content="ASWebsites builds premium, emotionally resonant websites for small businesses. No templates. Just results-driven design, SEO, and storytelling." />
   <link rel="canonical" href="https://www.aswebsites.com/" />
   <meta name="robots" content="index, follow" />
-  <meta name="google-site-verification" content="rNv-Ybb1ONl4n6fP77d_64DQStfI2Dj98-ZySjYHFzE" />
+
+  <!-- Open Graph Tags -->
   <meta property="og:title" content="ASWebsites – Custom Web Design for Small Businesses" />
-  <meta property="og:description" content="Explore custom websites designed for small businesses. Professional, personalized, and built to convert." />
+  <meta property="og:description" content="Explore premium websites built for small businesses. Designed to convert, styled to stand out." />
   <meta property="og:url" content="https://www.aswebsites.com/" />
   <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="/marketing/main.css" />
-</head>
+  <meta property="og:image" content="https://www.aswebsites.com/images/og-preview.jpg" />
 
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ASWebsites",
+    "url": "https://www.aswebsites.com",
+    "description": "Custom Y2K-modern websites for small businesses. Built with care, optimized for results.",
+    "creator": {
+      "@type": "Person",
+      "name": "Aaron"
+    }
+  }
+  </script>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="vista.css" />
+  <script src="toggle.js" defer></script>
+</head>
+</head>
 <body>
-  <header>
-    <hr />
+  <header class="glass">
+    <div class="logo">ASWebsites</div>
+    <nav>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
   </header>
 
   <main>
-    <section class="hero" itemscope itemtype="https://schema.org/WebPage">
-      <div class="hero-content">
-        <h1 itemprop="headline">Your Website Should Look as Professional as You Are</h1>
-        <h2>Custom Designs That Make Small Businesses Feel Big</h2>
-        <p itemprop="description">
-          Most small business websites <strong>blend into the background</strong>—generic templates, clunky layouts, and zero personality.
-          That’s not just a design flaw—it’s a credibility killer.
-          <strong>Your brand deserves better.</strong> I craft websites that <strong>feel premium, look unique, and build trust instantly</strong>—so your business stands out and stays memorable.
-        </p>
-        <a href="/marketing/contact.html" class="btn-primary">Experience a Personalized Website →</a>
-      </div>
+    <section class="hero glass">
+      <h1>Custom websites that feel personal,<br />look premium, and convert like crazy.</h1>
+      <p>Built by a solo designer who gets it — your brand, your voice, your goals.</p>
+      <a href="contact.html" class="cta">Get Your Custom Site</a>
+    </section>
+
+    <section class="intro glass">
+      <h2>Why ASWebsites?</h2>
+      <ul>
+        <li><strong>Tailored Design:</strong> No templates. Every pixel is yours.</li>
+        <li><strong>SEO & Speed:</strong> Built to rank and load fast.</li>
+        <li><strong>Emotional Copy:</strong> Words that resonate and drive action.</li>
+        <li><strong>Interactive Flair:</strong> Micro-interactions that delight.</li>
+      </ul>
     </section>
   </main>
 
-  <hr />
-
-  <nav>
-    <a href="/marketing/index.html" class="btn-primary">Go Back Home</a>
-    <a href="/marketing/examples.html" class="btn-secondary">Product Examples</a>
-    <a href="/marketing/pricing.html" class="btn-secondary">Pricing</a>
-  </nav>
-
-  <footer>
-    <p>&copy; 2025 ASWebsites. All Rights Reserved.</p>
+  <footer class="glass">
+    <p>&copy; 2025 ASWebsites. Designed with care in Colorado.</p>
   </footer>
 </body>
 </html>
