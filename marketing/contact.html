@@ -7,15 +7,11 @@
   <meta name="description" content="Ready to elevate your brand online? Contact ASWebsites to start your custom web design journey. No templates. Just premium, personalized results." />
   <link rel="canonical" href="https://www.aswebsites.com/contact" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph Tags -->
   <meta property="og:title" content="Contact ASWebsites – Start Your Custom Web Design" />
   <meta property="og:description" content="Reach out to ASWebsites and let’s build something unforgettable for your business." />
   <meta property="og:url" content="https://www.aswebsites.com/contact" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://www.aswebsites.com/images/contact-og.jpg" />
-
-  <!-- Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -32,34 +28,28 @@
     }
   }
   </script>
-
-  <!-- Styles & Scripts -->
-  <link rel="stylesheet" href="main.css" />
-  <script src="toggle.js" defer></script>
+  <link rel="stylesheet" href="vista.css" />
 </head>
 <body>
   <header>
     <nav>
-      <a href="/marketing/index.html" aria-label="Go to homepage">ASWebsites</a>
+      <a href="/" aria-label="Go to homepage">ASWebsites</a>
       <ul>
-        <li><a href="/marketing/example.html">Gallery</a></li>
-        <li><a href="/marketing/pricing.html">Pricing</a></li>
-        <li><a href="/marketing/contact.html" aria-current="page">Contact</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/contact" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section aria-labelledby="contact-heading">
-      <h1 id="contact-heading">Let’s Build Something Great</h1>
-      <p>Whether you’re ready to start or just exploring ideas, I’d love to hear from you. Fill out the form and I’ll get back to you personally.</p>
-
+    <section>
+      <h1>Let’s Build Something Great</h1>
       <form action="/submit-form" method="POST" novalidate>
         <label for="name">Your Name</label>
-        <input type="text" id="name" name="name" required autocomplete="name" />
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Your Email</label>
-        <input type="email" id="email" name="email" required autocomplete="email" />
+        <input type="email" id="email" name="email" required />
 
         <label for="message">Your Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
@@ -71,10 +61,6 @@
 
   <footer>
     <p>&copy; 2025 ASWebsites. Built with care in Colorado.</p>
-    <nav>
-      <a href="/privacy">Privacy</a>
-      <a href="/terms">Terms</a>
-    </nav>
   </footer>
 </body>
 </html>
