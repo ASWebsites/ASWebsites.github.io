@@ -179,3 +179,16 @@ footer {
     gap: 0.5rem;
   }
 }
+ table {
+   border-collapse: collapse;
+}
+  td {
+   padding: 10px;
+   text-align: center;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
