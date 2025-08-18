@@ -10,14 +10,14 @@ body {
   background: linear-gradient(to bottom, #e4ecf7, #cfddee);
   color: #1a1a1a;
   line-height: 1.6;
-  font-size: 16px;
+  font-size: 1rem; /* 16px base font size */
 }
 
 /* Header & Navigation */
 header {
   background: linear-gradient(to right, #dbe9f4, #b7cbe3);
-  border-bottom: 2px solid #a0b8d0;
-  padding: 1rem 2rem;
+  border-bottom: 0.15vw solid #a0b8d0; /* ~2px on 1366px screen */
+  padding: 1rem 4vw; /* horizontal padding scaled to viewport */
 }
 nav {
   display: flex;
@@ -28,11 +28,11 @@ nav a {
   text-decoration: none;
   color: #1a1a1a;
   font-weight: 600;
-  margin-left: 1rem;
+  margin-left: 2vw; /* spacing between nav links */
 }
 nav a[aria-current="page"] {
   color: #0056a3;
-  border-bottom: 2px solid #0056a3;
+  border-bottom: 0.15vw solid #0056a3;
 }
 
 /* Headings */
@@ -42,7 +42,7 @@ h1, h2 {
   margin-bottom: 0.5rem;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2rem; /* stays readable across devices */
 }
 h2 {
   font-size: 1.5rem;
@@ -54,13 +54,13 @@ button,
   background: linear-gradient(to bottom, #6aa9e9, #3c7dc9);
   color: white;
   border: none;
-  padding: 0.75rem 1.5rem;
+  padding: 1.5vh 3vw; /* responsive padding */
   font-size: 1rem;
-  border-radius: 6px;
+  border-radius: 0.5vw;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  box-shadow: 0 0.15vw 0.3vw rgba(0,0,0,0.2);
   transition: background 0.3s ease;
 }
 button:hover,
@@ -71,18 +71,18 @@ button:hover,
 /* Forms */
 form {
   display: grid;
-  gap: 1rem;
-  max-width: 600px;
-  margin-top: 1rem;
+  gap: 2vw;
+  max-width: 90vw; /* was 600px, now responsive */
+  margin-top: 2vh;
 }
 label {
   font-weight: bold;
 }
 input,
 textarea {
-  padding: 0.75rem;
-  border: 1px solid #a0b8d0;
-  border-radius: 4px;
+  padding: 1.5vh;
+  border: 0.1vw solid #a0b8d0;
+  border-radius: 0.3vw;
   font-size: 1rem;
   background-color: #f8fbff;
 }
@@ -93,20 +93,20 @@ textarea {
 /* Pricing Grid */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr)); /* was 280px */
+  gap: 4vw;
+  margin-top: 4vh;
 }
 article {
   background: linear-gradient(to bottom, #f4f8fc, #e2ecf5);
-  border: 1px solid #a0b8d0;
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border: 0.1vw solid #a0b8d0;
+  border-radius: 0.6vw;
+  padding: 3vh 3vw;
+  box-shadow: 0 0.3vw 0.6vw rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
 }
 article:hover {
-  transform: translateY(-4px);
+  transform: translateY(-0.3vw);
 }
 .price {
   font-size: 1.25rem;
@@ -117,10 +117,10 @@ article:hover {
 /* Footer */
 footer {
   background: linear-gradient(to right, #dbe9f4, #b7cbe3);
-  border-top: 2px solid #a0b8d0;
+  border-top: 0.15vw solid #a0b8d0;
   text-align: center;
   font-size: 0.875rem;
-  padding: 1rem 2rem;
+  padding: 2vh 4vw;
 }
 
 /* Responsive Typography */
