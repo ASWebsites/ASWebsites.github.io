@@ -40,45 +40,6 @@ html {
   font-style: italic;
   font-display: swap;
 }
-/* Add other weights as needed using same pattern */
-
-body {
-  background-color: #0088DD;
-  font-family: 'Mozilla Text', system-ui, sans-serif;
-  color: #FFFFFF;
-}
-
-img {
-  max-width: 100%;
-}
-
-h1, h2, h3 {
-  font-family: 'IBM Plex Serif', Georgia, serif;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 2.45rem;
-  font-weight: 500;
-}
-
-.btn-primary {
-  display: inline-block;
-  background-color: #EE0000;
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
-  font-family: 'Mozilla Text', sans-serif;
-}
-
-iframe {
-  max-width: 100%;
-  height: auto;
-  border: 0;
-}
 
 /* Base Reset */
 *,
@@ -88,7 +49,7 @@ iframe {
 }
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'IBM Plex Serif', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to bottom, #e4ecf7, #cfddee);
   color: #1a1a1a;
   line-height: 1.6;
@@ -119,7 +80,7 @@ nav a[aria-current="page"] {
 
 /* Headings */
 h1, h2 {
-  font-family: 'Segoe UI Semibold', 'Segoe UI', sans-serif;
+  font-family: 'Mozilla Text', sans-serif;
   color: #0f2c4d;
   margin-bottom: 0.5rem;
 }
