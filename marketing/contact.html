@@ -2,53 +2,79 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Contact ASWebsites | Custom Websites for Small Businesses</title>
-  <meta name="description" content="Ready to grow your business with a custom website? Contact ASWebsites today to start your project. Personalized service, professional results, no templates." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="canonical" href="https://www.aswebsites.com/contact.html" />
+  <title>Contact ASWebsites – Start Your Custom Web Design</title>
+  <meta name="description" content="Ready to elevate your brand online? Contact ASWebsites to start your custom web design journey. No templates. Just premium, personalized results." />
+  <link rel="canonical" href="https://www.aswebsites.com/contact" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Contact ASWebsites | Custom Websites for Small Businesses" />
-  <meta property="og:description" content="Reach out to start your custom website project. I offer personalized service and professional results for small businesses." />
-  <meta property="og:url" content="https://www.aswebsites.com/contact.html" />
-  <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="/main.css" />
-</head>
 
+  <!-- Open Graph Tags -->
+  <meta property="og:title" content="Contact ASWebsites – Start Your Custom Web Design" />
+  <meta property="og:description" content="Reach out to ASWebsites and let’s build something unforgettable for your business." />
+  <meta property="og:url" content="https://www.aswebsites.com/contact" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://www.aswebsites.com/images/contact-og.jpg" />
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "url": "https://www.aswebsites.com/contact",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "ASWebsites",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@aswebsites.com",
+        "contactType": "Customer Service"
+      }
+    }
+  }
+  </script>
+
+  <!-- Styles & Scripts -->
+  <link rel="stylesheet" href="vista.css" />
+  <script src="toggle.js" defer></script>
+</head>
 <body>
   <header>
-    <hr />
+    <nav>
+      <a href="/" aria-label="Go to homepage">ASWebsites</a>
+      <ul>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/contact" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="contact-cta" itemscope itemtype="https://schema.org/ContactPage">
-      <div class="cta-content">
-        <h1 itemprop="headline">Let’s Build a Website That Works as Hard as You Do</h1>
-        <p itemprop="description">
-          You’ve poured your heart into your business—now it’s time your website reflected that.
-          Whether you're starting fresh or need a redesign, I’ll create a site that’s <strong>professional, personalized, and built to grow with you</strong>.
-          No templates. No fluff. Just results.
-        </p>
-        <a 
-          href="mailto:ashippy373@gmail.com?subject=Website%20Project%20Inquiry&body=Hi%20Aaron%2C%0A%0AI%27m%20interested%20in%20getting%20a%20website%20for%20my%20business.%20Here%20are%20some%20details%3A%0A%0A-%20Business%20Name%3A%0A-%20Goals%20for%20the%20Website%3A%0A-%20Preferred%20Timeline%3A%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
-          class="cta-button"
-        >
-          Let's Talk About Your Vision →
-        </a>
-      </div>
+    <section aria-labelledby="contact-heading">
+      <h1 id="contact-heading">Let’s Build Something Great</h1>
+      <p>Whether you’re ready to start or just exploring ideas, I’d love to hear from you. Fill out the form and I’ll get back to you personally.</p>
+
+      <form action="/submit-form" method="POST" novalidate>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
-  <hr />
-
-  <nav>
-    <a href="/marketing/index.html" class="btn-secondary">Go Back Home</a>
-    <a href="/marketing/examples.html" class="btn-secondary">Learn More About What I Do</a>
-    <a href="/marketing/pricing.html" class="btn-secondary">Contact Me</a>
-    <a href="/pages/contact.html" class="btn-primary">Product Gallery</a>
-  </nav>
-
   <footer>
-    <p>&copy; 2025 ASWebsites. All Rights Reserved.</p>
+    <p>&copy; 2025 ASWebsites. Built with care in Colorado.</p>
+    <nav>
+      <a href="/privacy">Privacy</a>
+      <a href="/terms">Terms</a>
+    </nav>
   </footer>
 </body>
 </html>
