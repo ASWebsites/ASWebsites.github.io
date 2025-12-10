@@ -226,7 +226,7 @@ sup {
 }
 
 .navbar {
-    background-color: #F0F0F0; /* Color akin to the text box background */
+    background-color: #F0F0F0; /* Light gray, akin to the textbox background */
     border-radius: 10px; /* Rounded corners for the entire nav bar */
     
     /* 3D appearance for the entire bar */
@@ -239,6 +239,7 @@ sup {
     align-items: stretch; /* Makes all links the same height as the nav bar */
     
     width: 90%; /* Allows the nav bar to span more of the page */
+    max-width: 1000px; /* Increased max-width for larger screens if needed */
     margin: 20px auto; /* Centers the bar horizontally and provides vertical spacing */
     padding: 0; /* Remove padding from the nav container, padding is on links */
     height: 45px; /* Set a fixed height for a clean, unified bar look */
@@ -249,14 +250,17 @@ sup {
     color: #333; /* Darker text for better contrast on light background */
     text-decoration: none;
     font-weight: bold;
-    font-size: 1em; /* Adjust font size as needed */
+    font-size: 0.9em; /* Slightly reduced font size to help fit words */
     font-family: 'Georgia', serif; /* Old school font */
     white-space: nowrap; /* Prevents text from wrapping */
     
     display: flex; /* Use flexbox for each link to center text vertically */
     align-items: center; /* Vertically centers the text within each link */
     justify-content: center; /* Horizontally centers the text within each link */
-    padding: 0 10px; /* Reduced horizontal padding for text within each section */
+    padding: 0 10px; /* Horizontal padding for text within each section */
+    
+    flex: 1; /* This will make each link take up an equal amount of space */
+    min-width: 0; /* Allows flex items to shrink below their content size */
     
     border-right: 1px solid black; /* Black line separation between sections */
     
