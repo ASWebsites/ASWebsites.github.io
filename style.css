@@ -226,7 +226,7 @@ sup {
 }
 
 .navbar {
-    background-color: #6a6a6a; /* The specified shade of gray */
+    background-color: #6a6a6a; /* The specified shade of gray for the entire bar */
     border-radius: 10px; /* Rounded corners for the entire nav bar */
     
     /* 3D appearance for the entire bar */
@@ -258,6 +258,8 @@ sup {
     justify-content: center; /* Horizontally centers the text within each link */
     padding: 0 18px; /* Horizontal padding for text within each section */
     
+    /* No background-color here, let the parent .navbar background show */
+    
     border-right: 1px solid black; /* Black line separation between sections */
     
     /* Subtle 3D effect for each section within the bar */
@@ -279,7 +281,7 @@ sup {
 }
 
 .navbar a:hover {
-    background-color: #5a5a5a; /* Slightly darker gray on hover */
+    background-color: #5a5a5a; /* Slightly darker gray on hover for the individual link area */
     /* More pronounced pressed effect on hover */
     box-shadow: inset 0 0 5px rgba(0,0,0,0.5); 
 }
@@ -288,4 +290,5 @@ sup {
 body {
     padding-top: 0;
 }
+
 
