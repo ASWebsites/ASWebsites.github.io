@@ -225,3 +225,35 @@ sup {
     line-height: 0;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #333; /* Example background, adjust to your page's style */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000; /* Ensure it stays on top of other content */
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: white; /* Example text color, adjust */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555; /* Example hover effect, adjust */
+    color: white;
+}
+
+/* Optional: Add some padding to the body to prevent content from being hidden behind the sticky nav bar */
+body {
+    padding-top: 60px; /* Adjust this value based on the actual height of your navbar */
+}
+
