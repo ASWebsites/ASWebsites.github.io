@@ -12,9 +12,9 @@ body {
 }
 
 .container {
-    max-width: 900px;
-    width: 100%;
-    padding: 20px;
+    width: 90%; /* This makes the container take up 90% of the viewport width */
+    max-width: 1600px; /* Set a large maximum width, e.g., 1600px or even 1920px, to allow it to stretch significantly. */
+    margin: 0 auto; /* This centers the container on the page */
 }
 
 /* Page Titles */
@@ -226,24 +226,19 @@ sup {
 }
 
 .navbar {
-    background-color: #F0F0F0; /* Light gray, akin to the textbox background */
-    border-radius: 10px; /* Rounded corners for the entire nav bar */
-    
-    /* 3D appearance for the entire bar */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.4), /* Outer shadow for lift */
-                inset 0 0 10px rgba(255,255,255,0.1); /* Subtle inner light for depth */
-    border: 1px solid #C0C0C0; /* A subtle border for definition */
-    
-    display: flex; /* Use flexbox to keep items in one line and align them */
-    justify-content: center; /* Centers the navigation links horizontally */
-    align-items: stretch; /* Makes all links the same height as the nav bar */
-    
-    width: 90%; /* Allows the nav bar to span more of the page */
-    max-width: 1000px; /* Increased max-width for larger screens if needed */
-    margin: 20px auto; /* Centers the bar horizontally and provides vertical spacing */
-    padding: 0; /* Remove padding from the nav container, padding is on links */
-    height: 45px; /* Set a fixed height for a clean, unified bar look */
-    overflow: hidden; /* Ensures rounded corners are respected */
+    background-color: #F0F0F0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4), inset 0 0 10px rgba(255,255,255,0.1);
+    border: 1px solid #C0C0C0;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%; /* Make it take up the full width of its parent (.container) */
+    max-width: none; /* Remove any specific max-width constraint from the navbar itself */
+    margin: 20px auto;
+    padding: 0;
+    height: 45px;
+    overflow: hidden;
 }
 
 .navbar a {
