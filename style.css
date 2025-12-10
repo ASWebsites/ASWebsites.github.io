@@ -229,26 +229,30 @@ sup {
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: #333; /* Example background, adjust to your page's style */
+    background-color: #000080; /* Dark blue to match your page background */
     overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 1000; /* Ensure it stays on top of other content */
+    box-shadow: none; /* Removed shadow for a retro look */
+    z-index: 1000;
     padding: 10px 0;
-    text-align: center;
+    text-align: center; /* Centers the navigation links */
 }
 
 .navbar a {
     display: inline-block;
-    color: white; /* Example text color, adjust */
+    background-color: #A9A9A9; /* Light grey, similar to your 'Homepage' button */
+    color: white;
     text-align: center;
-    padding: 14px 20px;
+    padding: 8px 15px; /* Adjust padding to match button style */
+    margin: 0 5px; /* Add horizontal margin for spacing between links */
     text-decoration: none;
-    font-size: 17px;
+    font-size: 1em; /* Adjust font size as needed */
+    font-family: sans-serif; /* Use a sans-serif font for consistency with existing links */
     transition: background-color 0.3s ease;
+    border-radius: 0; /* Ensure sharp corners */
 }
 
 .navbar a:hover {
-    background-color: #555; /* Example hover effect, adjust */
+    background-color: #888888; /* Slightly darker grey on hover */
     color: white;
 }
 
