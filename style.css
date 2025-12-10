@@ -226,57 +226,66 @@ sup {
 }
 
 .navbar {
-    /* Removed sticky positioning as requested */
-    /* position: sticky; */
-    /* top: 0; */
-    /* z-index: 1000; */
-
-    background-color: #E0E0E0; /* Lighter gray for the nav bar container */
-    overflow: hidden;
-    padding: 5px 0; /* Adjust padding for the overall bar */
-    text-align: center; /* Centers the navigation links */
-    
-    /* Centering the nav bar block itself */
-    max-width: 900px; /* Adjust this width as needed for your layout */
-    margin: 20px auto; /* Centers the bar horizontally and provides vertical spacing */
-    
+    background-color: #6a6a6a; /* The specified shade of gray */
     border-radius: 10px; /* Rounded corners for the entire nav bar */
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Overall 3D effect for the bar */
+    
+    /* 3D appearance for the entire bar */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4), /* Outer shadow for lift */
+                inset 0 0 10px rgba(255,255,255,0.1); /* Subtle inner light for depth */
+    border: 1px solid #555; /* A subtle border for definition */
+    
+    display: flex; /* Use flexbox to keep items in one line and align them */
+    justify-content: center; /* Centers the navigation links horizontally */
+    align-items: stretch; /* Makes all links the same height as the nav bar */
+    
+    max-width: 900px; /* Adjust this width as needed to fit your content */
+    margin: 20px auto; /* Centers the bar horizontally and provides vertical spacing */
+    padding: 0; /* Remove padding from the nav container, padding is on links */
+    height: 45px; /* Set a fixed height for a clean, unified bar look */
+    overflow: hidden; /* Ensures rounded corners are respected */
 }
 
 .navbar a {
-    display: inline-block;
-    background-color: #F0F0F0; /* Even lighter gray for individual buttons */
-    color: #333; /* Darker text for better contrast on light background */
-    text-align: center;
-    padding: 10px 18px; /* Adjust padding for button size */
-    margin: 0; /* No margin between links, separation handled by border */
+    color: white; /* Text color for the links */
     text-decoration: none;
-    font-size: 1em;
-    font-family: sans-serif;
     font-weight: bold;
+    font-size: 1em; /* Adjust font size as needed */
+    font-family: sans-serif;
+    white-space: nowrap; /* Prevents text from wrapping */
     
-    border-radius: 8px; /* Rounded corners for the buttons */
-    border: 1px solid #C0C0C0; /* Subtle border for button depth */
-    border-bottom: 3px solid #A0A0A0; /* Stronger bottom border for a more pronounced 3D effect */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    display: flex; /* Use flexbox for each link to center text vertically */
+    align-items: center; /* Vertically centers the text within each link */
+    justify-content: center; /* Horizontally centers the text within each link */
+    padding: 0 18px; /* Horizontal padding for text within each section */
     
     border-right: 1px solid black; /* Black line separation between sections */
-    transition: all 0.2s ease; /* Smooth transition for hover effects */
+    
+    /* Subtle 3D effect for each section within the bar */
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.1), /* Top inner highlight */
+                inset 0 -1px 0 rgba(0,0,0,0.2); /* Bottom inner shadow */
+    
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.navbar a:first-child {
+    border-top-left-radius: 9px; /* Rounds the top-left corner of the first link */
+    border-bottom-left-radius: 9px; /* Rounds the bottom-left corner of the first link */
 }
 
 .navbar a:last-child {
-    border-right: none; /* Remove the black line after the last link */
+    border-right: none; /* Removes the black line after the last link */
+    border-top-right-radius: 9px; /* Rounds the top-right corner of the last link */
+    border-bottom-right-radius: 9px; /* Rounds the bottom-right corner of the last link */
 }
 
 .navbar a:hover {
-    background-color: #D0D0D0; /* Darker gray on hover */
-    border-bottom: 1px solid #C0C0C0; /* Simulate button being pressed in */
-    box-shadow: 0 0 1px rgba(0,0,0,0.3); /* Smaller shadow on hover */
-    transform: translateY(2px); /* Simulate button being pressed down */
+    background-color: #5a5a5a; /* Slightly darker gray on hover */
+    /* More pronounced pressed effect on hover */
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5); 
 }
 
-/* Remove body padding as the navbar is no longer sticky */
+/* Ensure no extra padding at the top of the body from previous sticky navbar settings */
 body {
     padding-top: 0;
 }
+
