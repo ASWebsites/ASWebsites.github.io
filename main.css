@@ -1,171 +1,227 @@
-html {
-  font-size: 16px;
-}
+/* General CSS for Retro Windows 97 Style */
 
-@font-face {
-  font-family: 'Mozilla Text', sans-serif;
-  src: url('/fonts/MozillaText-VariableFont_wght.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Bold', sans-serif;
-  src: url('/fonts/IBMPlexSerif-Bold.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Bold Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-BoldItalic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Extra Light', sans-serif;
-  src: url('/fonts/IBMPlexSerif-ExtraLight.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Extra Light Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-ExtraLightItalic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-Italic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Light', sans-serif;
-  src: url('/fonts/IBMPlexSerif-Light.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Light Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-LightItalic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Medium', sans-serif;
-  src: url('/fonts/BMPlexSerif-Medium.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Medium Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-MediumItalic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Regular', sans-serif;
-  src: url('/fonts/IBMPlexSerif-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Semi Bold', sans-serif;
-  src: url('/fonts/IBMPlexSerif-SemiBold.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Semi Bold Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-SemiBoldItalic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Thin', sans-serif;
-  src: url('/fonts/IBMPlexSerif-Thin.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'IBM Plex Serif Thin Italic', sans-serif;
-  src: url('/fonts/IBMPlexSerif-ThinItalic.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* Basic Reset & Font */
 body {
-  background-color: #0088DD;
-  font-family: 'Mozilla Text', sans-serif;
-  color: #FFFFFF;
+    margin: 0;
+    font-family: 'MS Sans Serif', 'Arial', sans-serif; /* Common Windows 97 fonts */
+    background-color: #000080; /* Dark navy blue background */
+    color: #FFFFFF; /* White text on navy background */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-img {
-  max-width: 100%;
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
 }
 
-h1 {
-  font-family: 'IBM Plex Serif Regular';
-  font-size: 2.45rem;
-  font-weight: 500;
+/* Page Titles */
+.page-title {
+    font-family: 'Times New Roman', serif; /* Classic serif for titles */
+    font-size: 3em;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px #000000; /* Simple shadow for depth */
+    margin-bottom: 15px;
 }
 
-.btn-primary {
-  display: inline-block; 
-  background-color: #EE0000; 
-  color: white;
-  padding: 12px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-  border: none;
+.page-subtitle {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #CCCCCC;
+    margin-bottom: 40px;
 }
 
-.btn-primary:hover {
-  background-color: #B60000; 
+/* Windows 97 Pop-up Box Style for Paragraphs */
+.win97-popup {
+    background-color: #C0C0C0; /* Light gray window background */
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    box-shadow: 4px 4px #000000; /* Shadow to lift the box */
+    margin-bottom: 30px; /* Separation between pop-ups */
+    overflow: hidden; /* Ensures content doesn't spill */
 }
 
-.btn-secondary {
-  display: inline-block;
-  background-color: #A9A9A9; 
-  color: white;
-  padding: 10px 18px;
-  border-radius: 5px;
-  text-decoration: none;
+.title-bar {
+    background: linear-gradient(to right, #000080, #1084D0); /* Classic Windows 97 blue gradient */
+    padding: 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    border-bottom: 1px solid #000000;
 }
 
-.btn-secondary:hover {
-  background-color: #595959;
+.title-bar-text {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 0.9em;
 }
 
- img.thumbnail {
-   width: 120px;
-   height: auto;
+.title-bar-controls button {
+    background-color: #C0C0C0;
+    border-top: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #808080;
+    border-bottom: 1px solid #808080;
+    width: 16px;
+    height: 14px;
+    margin-left: 2px;
+    font-size: 0.7em;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
 }
 
- table {
-   border-collapse: collapse;
-}
-  td {
-   padding: 10px;
-   text-align: center;
+.title-bar-controls button:active {
+    border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    background-color: #E0E0E0;
 }
 
-iframe {
-  max-width: 100%;
-  height: auto;
-  border: 0;
+/* Icons for title bar buttons (simplified for CSS-only) */
+.title-bar-controls button[aria-label="Minimize"]::before { content: '_'; position: absolute; top: -5px; left: 3px; }
+.title-bar-controls button[aria-label="Maximize"]::before { content: '[]'; position: absolute; top: -2px; left: 2px; }
+.title-bar-controls button[aria-label="Close"]::before { content: 'X'; position: absolute; top: -2px; left: 3px; }
+
+
+.window-body {
+    padding: 15px;
+    color: #000000; /* Black text on light gray background */
+    line-height: 1.6;
+    font-size: 0.95em;
 }
+
+.window-body p {
+    margin-top: 0;
+    margin-bottom: 1em; /* Space between paragraphs within the same window */
+}
+
+.window-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Footnotes Section */
+.footnotes-section {
+    margin-top: 50px;
+    padding: 20px;
+    border-top: 2px dotted #808080;
+    color: #FFFFFF;
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* A slightly less formal font for ads */
+}
+
+.footnotes-title {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #FFD700; /* Gold-like color for emphasis */
+    text-shadow: 1px 1px #000000;
+}
+
+/* Footnote Ad Templates */
+
+/* Footnote Ad Template 1: Classic Banner Ad */
+.footnote-ad-1 {
+    background-color: #808080; /* Gray background */
+    border: 3px outset #C0C0C0; /* 3D effect border */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #000000;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    transition: transform 0.1s ease-in-out; /* Little interactive touch */
+}
+
+.footnote-ad-1:hover {
+    transform: translateY(-2px);
+}
+
+.footnote-ad-1 p {
+    margin: 0;
+    font-weight: bold;
+    text-shadow: 1px 1px #FFFFFF;
+}
+
+/* Footnote Ad Template 2: Bright & Bold */
+.footnote-ad-2 {
+    background-color: #FF0000; /* Red background */
+    border: 2px solid #FFFF00; /* Yellow border */
+    padding: 8px 12px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-family: 'Impact', sans-serif; /* Impactful font */
+    font-size: 0.9em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    animation: blink-border 1s infinite alternate; /* Simple blinking effect */
+}
+
+@keyframes blink-border {
+    from { border-color: #FFFF00; }
+    to { border-color: #FF00FF; }
+}
+
+.footnote-ad-2 p {
+    margin: 0;
+    text-shadow: 1px 1px #000000;
+}
+
+/* Footnote Ad Template 3: Subtle & Informative */
+.footnote-ad-3 {
+    background-color: #008080; /* Teal background */
+    border: 1px dashed #FFFFFF; /* Dashed white border */
+    padding: 12px 18px;
+    margin-bottom: 15px;
+    text-align: right;
+    font-family: 'Courier New', monospace; /* Monospace for a data feel */
+    font-size: 0.8em;
+    color: #FFFF00; /* Yellow text */
+    position: relative;
+}
+
+.footnote-ad-3::before {
+    content: "AD";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: #FF4500; /* Orange-red badge */
+    color: #FFFFFF;
+    padding: 2px 5px;
+    font-size: 0.7em;
+    font-weight: bold;
+    border: 1px solid #000000;
+}
+
+.footnote-ad-3 p {
+    margin: 0;
+}
+
+/* General Link Styling (if any in footnotes) */
+.footnote-ad-1 a, .footnote-ad-2 a, .footnote-ad-3 a {
+    color: #0000FF; /* Classic blue link */
+    text-decoration: underline;
+}
+
+.footnote-ad-1 a:hover, .footnote-ad-2 a:hover, .footnote-ad-3 a:hover {
+    color: #800080; /* Purple visited link style */
+}
+
+/* Styling for superscript footnote numbers */
+sup {
+    font-size: 0.7em;
+    vertical-align: super;
+    line-height: 0;
+}
+
