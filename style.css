@@ -394,8 +394,16 @@ sup {
     box-shadow: inset 0 0 5px rgba(0,0,0,0.5); 
 }
 
-/* Ensure no extra padding at the top of the body from previous sticky navbar settings */
-body {
-    padding-top: 0;
-}
+ .image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Aligns images to the top if they have different heights initially */
+    flex-wrap: wrap; /* Allows images to wrap to the next line on smaller screens */
+  }
 
+  .image-container img {
+    width: 48%; /* Adjust as needed to control spacing between images */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure images don't overflow their container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
