@@ -208,13 +208,117 @@ body {
     margin: 0;
 }
 
-/* General Link Styling (if any in footnotes) */
-.footnote-ad-1 a, .footnote-ad-2 a, .footnote-ad-3 a {
+.footnote-ad-4 {
+    background-color: #FFFF00; /* Yellow background */
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 1.1em;
+    color: #FF0000; /* Red text */
+    font-weight: bold;
+    box-shadow: 3px 3px #808080;
+    animation: pulse-shadow 1.5s infinite alternate; /* Simple pulsing effect */
+}
+
+@keyframes pulse-shadow {
+    from { box-shadow: 3px 3px #808080; }
+    to { box-shadow: 5px 5px #000000; }
+}
+
+.footnote-ad-4 p {
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* NEW AD TEMPLATE 5: Pixelated Button */
+.footnote-ad-5 {
+    background-color: #00FF00; /* Bright green */
+    border: 3px solid #000000;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Pixelated', 'System', monospace; /* Attempt at pixelated font */
+    font-size: 0.9em;
+    color: #000080; /* Dark blue text */
+    text-shadow: 1px 1px #FFFFFF;
+    box-shadow: inset 2px 2px #FFFFFF, inset -2px -2px #808080; /* Inset 3D effect */
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.footnote-ad-5:hover {
+    background-color: #00CC00; /* Slightly darker green on hover */
+}
+
+.footnote-ad-5 p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* NEW AD TEMPLATE 6: Flashing Text Banner */
+.footnote-ad-6 {
+    background-color: #800080; /* Purple background */
+    border: 2px solid #FFFF00; /* Yellow border */
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #000000;
+    animation: flash-text 1s steps(1, end) infinite; /* Flashing text effect */
+}
+
+@keyframes flash-text {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.footnote-ad-6 p {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* NEW AD TEMPLATE 7: Simple Grey Button */
+.footnote-ad-7 {
+    background-color: #C0C0C0; /* Standard gray */
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #808080;
+    border-bottom: 2px solid #808080;
+    padding: 8px 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: 'MS Sans Serif', sans-serif;
+    font-size: 0.9em;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.footnote-ad-7:active {
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    padding: 10px 13px 6px 17px; /* Adjust padding to simulate button press */
+}
+
+.footnote-ad-7 p {
+    margin: 0;
+}
+
+.footnote-ad-1 a, .footnote-ad-2 a, .footnote-ad-3 a, .footnote-ad-4 a, .footnote-ad-5 a, .footnote-ad-6 a, .footnote-ad-7 a {
     color: #0000FF; /* Classic blue link */
     text-decoration: underline;
 }
 
-.footnote-ad-1 a:hover, .footnote-ad-2 a:hover, .footnote-ad-3 a:hover {
+.footnote-ad-1 a:hover, .footnote-ad-2 a:hover, .footnote-ad-3 a:hover, .footnote-ad-4 a:hover, .footnote-ad-5 a:hover, .footnote-ad-6 a:hover, .footnote-ad-7 a:hover {
     color: #800080; /* Purple visited link style */
 }
 
